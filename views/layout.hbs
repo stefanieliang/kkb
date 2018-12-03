@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    {{{block 'styles'}}}
+  </head>
+  <body>
+
+  <!--导航栏,输出叫nav的partial-->
+  {{> nav}}
+
+  <!--动态partial,whitchPartial是一个helper-->
+{{> (whitchPartial navName)}}
+
+  <!--块级partial，用法一-->
+  {{#> ooxx}}
+      出现错误时，您会看到这句话！
+  {{/ooxx}}
+
+  <!--块级partial，用法二，使用块级partial传递内容-->
+{{#> win title='标题'}}
+    <div>这是窗口里传递的内容。。。</div>
+{{/win}}
+
+  <!--块级partial，用法三，布局组件-->
+{{#> layout}}
+    {{#*inline 'top'}}
+        这是top
+    {{/inline}}
+    {{#*inline 'foo'}}
+        这是foo
+    {{/inline}}
+    {{#*inline 'bar'}}
+        这是bar
+    {{/inline}}
+{{/layout}}
+  {{{body}}}
+
+
+  <!--jquery-->
+  <script src="/javascript/jquery.js"></script>
+  {{{block 'jquery'}}}
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/stylesheets/open-courses.css">
+
+<h1>公开课页面</h1>
+
+<p>{{foo}}</p>
+
+
+<script>
+//请求短信验证码
+$('#btn-code').click(function () {
+    $.ajax({
+        url:'/api/code'+$('#phone').val(),
+        success:function (result) {
+            if(result.success)(
+                alert('成功')
+            )else{
+                alert('失败')
+            }
+        }
+    })
+})
+
+    //提交报名
+    $('#btn-signup').click(function () {
+        $.ajax({
+            url:'api/code',
+            method:'post',
+            data:{
+                phone:$('#phone').val(),
+                code:$('#code').val(),
+            },
+            success:function (result) {
+                if(result.success)(
+                        alert('成功')
+                )else{
+                    alert('失败')
+                }
+            }
+        })
+    })
+</script>
