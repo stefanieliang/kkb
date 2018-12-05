@@ -57,7 +57,7 @@ hbs.registerHelper('partOfDate',function (str,part,index) {
     if(part == 'd'){
         return date.getDate();
     }else if(part == 'M'){
-        return date.getMonth()+1;
+        return ''+(date.getMonth()+1);
     }else if(part == 'h'){
         let h = date.getHours();
         h=h<10?('0'+h):h.toString();

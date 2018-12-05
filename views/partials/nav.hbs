@@ -30,11 +30,13 @@
 </div>
 
 {{#extend 'jquery'}}
-<script>
-    $('#menu-item-vip').on('mouseenter',function () {
-        $('.menu-vip').show();
-    }).on('mouseleave',function () {
-        $('.menu-vip').hide();
-    })
-</script>
+    <script>
+        $('#menu-item-vip')
+                .on('mouseenter', function () {
+                    $('.menu-vip').show();
+                })
+                .on('mouseleave', function () {
+                    $('.menu-vip').hide();
+                })
+    </script>
 {{/extend}}
