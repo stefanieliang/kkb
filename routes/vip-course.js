@@ -8,9 +8,11 @@ router.get('/:course', function(req, res, next) {
     res.locals.bar = 'foo';
 
     //方式一：获取url参数，req.params
-    console.log(req.params.course);
+    // console.log(req.params.course);
+
     //方式二：获取查询参数，req.query
-    console.log(req.query.a);
+    // console.log(req.query.a);
+
     //方式三：请求体body
 
     //错误处理

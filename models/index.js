@@ -6,7 +6,10 @@ const sequelize = new Sequelize('kkb','root','root',{
    host:'localhost',
    dialect:'mysql',//方言设置
    pool:{max:5,acquire:30000,idle: 10000},//连接池
-    timestamps:false,//禁止seq自动添加createAt,updatedAt
+    define:{
+        timestamps:false,//禁止seq自动添加createAt,updatedAt
+        freezeTableName: true
+    }
 });
 //定义模型
 const User = sequelize.define('user',{

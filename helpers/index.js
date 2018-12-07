@@ -7,7 +7,7 @@ const path = require('path');
 hbs.registerPartials(path.join(__dirname,'../views/partials'));
 
 //只导入一部分,并且和我们的 handelbars实例挂钩
-helpers.comparison({handelbars:hbs.handlebars});
+helpers({handlebars:hbs.handlebars});
 
 hbs.registerHelper('addOne',function (num) {
     return ++num;

@@ -14,27 +14,29 @@
 {{> (whitchPartial navName)}}
 
   <!--块级partial，用法一-->
-  {{#> ooxx}}
-      出现错误时，您会看到这句话！
-  {{/ooxx}}
+  <!--{{#> ooxx}}-->
+      <!--出现错误时，您会看到这句话！-->
+  <!--{{/ooxx}}-->
 
-  <!--块级partial，用法二，使用块级partial传递内容-->
-{{#> win title='标题'}}
-    <div>这是窗口里传递的内容。。。</div>
-{{/win}}
+  <!--&lt;!&ndash;块级partial，用法二，使用块级partial传递内容&ndash;&gt;-->
+<!--{{#> win title='标题'}}-->
+    <!--<div>这是窗口里传递的内容。。。</div>-->
+<!--{{/win}}-->
 
-  <!--块级partial，用法三，布局组件-->
-{{#> layout}}
-    {{#*inline 'top'}}
-        这是top
-    {{/inline}}
-    {{#*inline 'foo'}}
-        这是foo
-    {{/inline}}
-    {{#*inline 'bar'}}
-        这是bar
-    {{/inline}}
-{{/layout}}
+  <!--&lt;!&ndash;块级partial，用法三，布局组件&ndash;&gt;-->
+<!--{{#> layout}}-->
+    <!--{{#*inline 'top'}}-->
+        <!--这是top-->
+    <!--{{/inline}}-->
+    <!--{{#*inline 'foo'}}-->
+        <!--这是foo-->
+    <!--{{/inline}}-->
+    <!--{{#*inline 'bar'}}-->
+        <!--这是bar-->
+    <!--{{/inline}}-->
+<!--{{/layout}}-->
+
+
   {{{body}}}
 
 
