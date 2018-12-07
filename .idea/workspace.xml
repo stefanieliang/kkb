@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0dd76df-75d2-48be-a78b-1bbf9047c1d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b0dd76df-75d2-48be-a78b-1bbf9047c1d1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -258,18 +256,7 @@
             <path>
               <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
               <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,6 +278,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\kaikeba\public" />
       <recent name="D:\WebstormProjects\kaikeba\views\vip-course" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -337,7 +325,7 @@
       <workItem from="1543892751476" duration="1825000" />
       <workItem from="1543911461370" duration="22072000" />
       <workItem from="1544002683735" duration="16572000" />
-      <workItem from="1544176797728" duration="552000" />
+      <workItem from="1544176797728" duration="896000" />
     </task>
     <task id="LOCAL-00001" summary="sql commit">
       <created>1543978315671</created>
@@ -360,13 +348,20 @@
       <option name="project" value="LOCAL" />
       <updated>1544177327039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="form commit">
+      <created>1544177542957</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544177542957</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84922000" />
+    <option name="totallyTimeSpent" value="85266000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -376,9 +371,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.17931548" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.17931548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5027322" side_tool="true" weight="0.2841254" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -388,7 +383,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.03770492" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50050557" side_tool="true" weight="0.53370786" />
