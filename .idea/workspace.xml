@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0dd76df-75d2-48be-a78b-1bbf9047c1d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1542375212832.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1542376410117.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/open-courses-update.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/open-courses.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/result.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/vip-courses.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layout-admin.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/vip-course.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/vip-course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -74,7 +41,7 @@
           <entry key="html" value="1" />
           <entry key="http" value="1" />
           <entry key="jpeg" value="1" />
-          <entry key="js" value="80" />
+          <entry key="js" value="81" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
           <entry key="ts" value="1" />
@@ -87,7 +54,7 @@
           <entry key="Handlebars/Mustache" value="68" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="83" />
+          <entry key="JavaScript" value="84" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="2" />
           <entry key="TypeScript" value="1" />
@@ -99,7 +66,7 @@
           <entry key="hbs" value="2608" />
           <entry key="js" value="10031" />
           <entry key="json" value="4" />
-          <entry key="txt" value="20" />
+          <entry key="txt" value="24" />
           <entry key="www" value="4" />
         </counts>
       </usages-collector>
@@ -109,7 +76,7 @@
           <entry key="Handlebars/Mustache" value="2608" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="10035" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -166,11 +133,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/admin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
               <caret line="125" column="75" selection-start-line="125" selection-start-column="75" selection-end-line="125" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="752" column="31" selection-start-line="752" selection-start-column="31" selection-end-line="752" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -282,17 +258,6 @@
             <path>
               <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
               <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,7 +337,7 @@
       <workItem from="1543892751476" duration="1825000" />
       <workItem from="1543911461370" duration="22072000" />
       <workItem from="1544002683735" duration="16572000" />
-      <workItem from="1544176797728" duration="307000" />
+      <workItem from="1544176797728" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="sql commit">
       <created>1543978315671</created>
@@ -388,11 +353,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544001082675</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="form commit">
+      <created>1544177327039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544177327039</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84677000" />
+    <option name="totallyTimeSpent" value="84922000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -405,9 +377,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.12723215" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.17931548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5027322" side_tool="true" weight="0.2841254" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -417,11 +388,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50050557" side_tool="true" weight="0.53370786" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49949443" visible="true" weight="0.12295082" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49949443" weight="0.12295082" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.518851" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49949443" weight="0.53370786" />
@@ -439,7 +410,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sql commit" />
     <MESSAGE value="sequelize commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="sequelize commit" />
+    <MESSAGE value="form commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="form commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/vip-course.hbs" />
@@ -470,9 +442,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
@@ -705,6 +674,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="125" column="75" selection-start-line="125" selection-start-column="75" selection-end-line="125" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="752" column="31" selection-start-line="752" selection-start-column="31" selection-end-line="752" selection-end-column="31" />
         </state>
       </provider>
     </entry>
