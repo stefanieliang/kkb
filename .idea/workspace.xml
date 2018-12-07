@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0dd76df-75d2-48be-a78b-1bbf9047c1d1" name="Default Changelist" comment="" />
+    <list default="true" id="b0dd76df-75d2-48be-a78b-1bbf9047c1d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -42,6 +44,7 @@
           <entry key="js" value="81" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
+          <entry key="sql" value="1" />
           <entry key="ts" value="1" />
           <entry key="www" value="3" />
         </counts>
@@ -54,6 +57,7 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="84" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="SQL" value="1" />
           <entry key="Scratch" value="2" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -140,13 +144,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="752" column="31" selection-start-line="752" selection-start-column="31" selection-end-line="752" selection-end-column="31" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/kkb.sql">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -251,6 +260,11 @@
             <path>
               <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
               <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kaikeba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kaikeba" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,11 +296,11 @@
       <recent name="D:\WebstormProjects\kaikeba\views\vip-course" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\kaikeba\data" />
       <recent name="D:\WebstormProjects\kaikeba\public\images" />
       <recent name="D:\WebstormProjects\kaikeba\views\admin" />
       <recent name="D:\WebstormProjects\kaikeba\routes" />
       <recent name="D:\WebstormProjects\kaikeba\views" />
-      <recent name="D:\WebstormProjects\kaikeba\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,7 +339,7 @@
       <workItem from="1543892751476" duration="1825000" />
       <workItem from="1543911461370" duration="22072000" />
       <workItem from="1544002683735" duration="16572000" />
-      <workItem from="1544176797728" duration="896000" />
+      <workItem from="1544176797728" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="sql commit">
       <created>1543978315671</created>
@@ -355,11 +369,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544177542957</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="form commit">
+      <created>1544177880674</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544177880674</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85266000" />
+    <option name="totallyTimeSpent" value="85659000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,7 +392,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.17931548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -678,6 +700,9 @@
           <caret line="752" column="31" selection-start-line="752" selection-start-column="31" selection-end-line="752" selection-end-column="31" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/kkb.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
