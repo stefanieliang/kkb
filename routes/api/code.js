@@ -3,22 +3,23 @@ const router = express.Router();
 
 const moment = require('moment');//生成时间戳使用
 const md5 = require('md5');//加密
-const axios = require('axios');//
-const qs = require('querystring');
+const axios = require('axios');//发送http请求，默认的Content-type是json
+const qs = require('querystring');//参数编码
 const {query} = require('../../models/db');
 
+//获取验证码
 router.get('/:phone',async function(req, res, next) {
     //1.生成6位随机码
     const code = ran()+ran()+ran()+ran()+ran()+ran();
     console.log(code);
 
-    //2.调用秒滴借口，提前构造参数
-    const url='https://api.miaodiyun.com/20150822/query/accountInfo';
+    //2.调用秒滴接口，提前构造参数
+    const url='https://api.miaodiyun.com/20150822/industrySMS/sendSMS';
     const to = req.params.phone;//发送目标手机号
-    const accountSid = '3324eab4c1cd456e8cc7246176def24f';//账号
-    const authToken = 'b1c4983e2d8e45b9806aeb0a634d79b1';//令牌
-    const templateid = '613227680';//短信模板id
-    const param = `${code},1`//短信参数
+    const accountSid = 'd9f23788ce8447409248c8414ebdcc36';//账号id
+    const authToken = '88d7cc8cbef44661b3b19ebd8c25b13a';//令牌
+    const templateid = '950413969';//短信模板id
+    const param = `${code},1`;//短信参数
     const now =moment();
     const timestamp = now.format('yyyyMMddHHmmss');
     const sig = md5(accountSid + authToken + timestamp);//签名
@@ -26,7 +27,7 @@ router.get('/:phone',async function(req, res, next) {
     //3.发送请求
     try{
         const resp = await axios.post(url
-            ,qs.stringify(to,accountSid,templateid,param,timestamp,sig),
+            ,qs.stringify({to,accountSid,templateid,param,timestamp,sig}),
             {headers:
                     {'Content-type':'application/x-www-form-urlencoded'}});
         console.log(resp.data);
@@ -43,14 +44,14 @@ router.get('/:phone',async function(req, res, next) {
                 //插入成功
                 res.json({success:true,code})//code仅开发使用
             }else{
-                res.json({success:true,message:'发送验证码失败'})//code仅开发使用
+                res.json({success:false,message:'发送验证码失败'})//code仅开发使用
             }
         }else{
-            res.json({success:true,message:'发送验证码失败'})//code仅开发使用
+            res.json({success:false,message:'发送验证码失败'})//code仅开发使用
         }
     }catch (e) {
         console.log(e);
-        res.json({success:true,message:'发送验证码失败'})//code仅开发使用
+        res.json({success:false,message:'发送验证码失败'})//code仅开发使用
     }
 });
 
@@ -63,7 +64,7 @@ router.post('/',async (req,res)=>{
    try {
        const sql = 'select * from verify_code where phone = ? and code = ?';
        const {phone,code} = req.body;
-       const results = await query(sql,[phone,code]);
+       const results = await query(sql,[phone,code]);//参数不止一个的时候，用数组
        if(results.length > 0){
            //存在匹配项，验证是否过期
            const expires = results[0].expires;

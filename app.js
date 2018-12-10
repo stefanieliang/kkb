@@ -4,6 +4,7 @@ const path = require('path');//处理路径相关
 const cookieParser = require('cookie-parser');//cookie解析
 const logger = require('morgan');//日志
 const helper = require('./helpers');//注册hbs的帮助方法
+const cors = require('cors');
 
 //导入自定义中间件
 const {initLocals} = require('./middleware');
@@ -24,6 +25,10 @@ app.set('view engine', 'hbs');
 
 
 //应用中间件
+app.use(cors({
+    origin:'http://localhost:8080',
+    credentials:true
+}));//解决跨域
 app.use(logger('dev'));//日志
 app.use(express.json());//获取ajax传递json
 app.use(express.urlencoded({ extended: false }));//解析url参数
@@ -34,13 +39,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 //注册自定义的中间件
 app.use(initLocals);
 
+
+
 //路由注册
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/open-courses', openCoursesRouter);
 app.use('/vip-course', vipCourseRouter);
 app.use('/admin', adminRouter);
-app.use('/code', codeRouter);
+app.use('/api/code', codeRouter);
 app.use('/api/users', require('./routes/api/users'));
 
 // catch 404 and forward to error handler

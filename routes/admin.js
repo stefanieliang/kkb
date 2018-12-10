@@ -110,7 +110,6 @@ router.post('/open-courses',
             try {
                 let sql, oper;
                 //可以根据数据中是否存在id来判断是新增还是更新
-                console.log('11111111111')
                 if(req.body.id){
                     const id = req.body.id;
                     delete req.body.id;
