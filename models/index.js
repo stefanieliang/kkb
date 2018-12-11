@@ -19,7 +19,7 @@ const User = sequelize.define('user',{
    age:{type:Sequelize.INTEGER,unsigned:true}
 });
 //同步数据库,force为true则会删除已存在的同名表
-User.sync({force:true}).then(()=>{
+User.sync({force:false}).then(()=>{
     //插入测试数据
     return User.create({
         firstName: 'tom',

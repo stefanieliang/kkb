@@ -32,14 +32,22 @@ app.use(cors({
 app.use(logger('dev'));//日志
 app.use(express.json());//获取ajax传递json
 app.use(express.urlencoded({ extended: false }));//解析url参数
-app.use(cookieParser());//cookie解析
+app.use(cookieParser('its a secret'));//cookie解析,'its a secret'是cookie的加密字段
+//配置session,需要在cookie下面
+const session = require('express-session');
+app.use(session({
+    secret:'its a secret',//密钥
+    resave:false,//强制保存会话到存储（默认的是内存）中
+    saveUninitialized:false,//保存未初始化的session到存储中
+    cookie:{
+        maxAge: 7*24*60*60*1000
+    }
+}));
 //设置静态目录
 app.use(express.static(path.join(__dirname, 'public')));
 
 //注册自定义的中间件
 app.use(initLocals);
-
-
 
 //路由注册
 app.use('/', indexRouter);
