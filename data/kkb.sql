@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50709
 File Encoding         : 65001
 
-Date: 2018-12-07 18:14:55
+Date: 2018-12-12 18:04:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -64,7 +64,7 @@ CREATE TABLE `open_course` (
   `count` int(11) DEFAULT '0',
   `poster` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COMMENT='公开课表';
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='公开课表';
 
 -- ----------------------------
 -- Records of open_course
@@ -76,21 +76,37 @@ INSERT INTO `open_course` VALUES ('14', 'dd1', 'dd1', '2018-12-08 18:02:00', '0'
 INSERT INTO `open_course` VALUES ('16', 'xx', 'xx', '2019-12-07 03:03:00', '0', '1544176986985.jpeg');
 
 -- ----------------------------
+-- Table structure for sessions
+-- ----------------------------
+DROP TABLE IF EXISTS `sessions`;
+CREATE TABLE `sessions` (
+  `session_id` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `expires` int(11) unsigned NOT NULL,
+  `data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
+  PRIMARY KEY (`session_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sessions
+-- ----------------------------
+INSERT INTO `sessions` VALUES ('69eHjHzPpHjpWXlJ5M24gUCs3borV7WX', '1545212266', 0x7B22636F6F6B6965223A7B226F726967696E616C4D6178416765223A3630343739393939382C2265787069726573223A22323031382D31322D31395430393A33373A34362E3035315A222C22687474704F6E6C79223A747275652C2270617468223A222F227D2C22636F6465496D67223A2266696A70227D);
+
+-- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `firstName` varchar(20) DEFAULT NULL,
-  `lastName` varchar(20) DEFAULT NULL,
-  `age` int(11) DEFAULT NULL,
+  `username` varchar(45) DEFAULT NULL,
+  `phone` varchar(11) NOT NULL,
+  `password` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'tom', 'cruise', null);
+INSERT INTO `user` VALUES ('1', '小菲', '13269066094', '111');
 
 -- ----------------------------
 -- Table structure for users
@@ -121,13 +137,13 @@ CREATE TABLE `verify_code` (
   `code` varchar(6) NOT NULL,
   `expires` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='手机验证码存储表';
 
 -- ----------------------------
 -- Records of verify_code
 -- ----------------------------
-INSERT INTO `verify_code` VALUES ('1', '17337952504', '949439', '2018-11-21 21:16:43');
-INSERT INTO `verify_code` VALUES ('2', '17337952504', '210939', '2018-11-21 21:31:26');
+INSERT INTO `verify_code` VALUES ('3', '13269066094', '000624', '2018-12-10 17:17:07');
+INSERT INTO `verify_code` VALUES ('4', '13269066094', '776400', '2018-12-12 11:55:14');
 
 -- ----------------------------
 -- Table structure for vip_course

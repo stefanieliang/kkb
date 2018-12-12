@@ -35,7 +35,11 @@ app.use(express.urlencoded({ extended: false }));//解析url参数
 app.use(cookieParser('its a secret'));//cookie解析,'its a secret'是cookie的加密字段
 //配置session,需要在cookie下面
 const session = require('express-session');
+const Store = require('express-mysql-session')(session);
+const {pool} = require('./models/db');
+const store = new Store(null,pool);
 app.use(session({
+    store,// 设置session存储为mysql,注意当前用户需要有表的创建权限
     secret:'its a secret',//密钥
     resave:false,//强制保存会话到存储（默认的是内存）中
     saveUninitialized:false,//保存未初始化的session到存储中

@@ -3,8 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="b0dd76df-75d2-48be-a78b-1bbf9047c1d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.coveralls.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.coveralls.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/underscore-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/underscore-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/underscore.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/node_modules/underscore/underscore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-mysql-session/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-mysql-session/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/users.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +49,11 @@
     <session id="1522422360">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.36" value="1" />
@@ -34,7 +63,7 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.51" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,7 +73,7 @@
           <entry key="html" value="2" />
           <entry key="http" value="3" />
           <entry key="jpeg" value="1" />
-          <entry key="js" value="98" />
+          <entry key="js" value="101" />
           <entry key="json" value="9" />
           <entry key="md" value="3" />
           <entry key="sql" value="1" />
@@ -59,7 +88,7 @@
           <entry key="Handlebars/Mustache" value="72" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="101" />
+          <entry key="JavaScript" value="104" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="4" />
@@ -72,7 +101,7 @@
           <entry key="hbs" value="2611" />
           <entry key="html" value="343" />
           <entry key="http" value="87" />
-          <entry key="js" value="11440" />
+          <entry key="js" value="12110" />
           <entry key="json" value="10" />
           <entry key="txt" value="40" />
           <entry key="www" value="4" />
@@ -84,7 +113,7 @@
           <entry key="HTML" value="343" />
           <entry key="Handlebars/Mustache" value="2611" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="11444" />
+          <entry key="JavaScript" value="12114" />
           <entry key="PLAIN_TEXT" value="40" />
           <entry key="Scratch" value="86" />
         </counts>
@@ -98,10 +127,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/api/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <folding>
+                <element signature="e#414#820#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api/code.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="1782">
               <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
             </state>
           </provider>
@@ -110,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/open-courses.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="95" column="14" lean-forward="true" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+            <state relative-caret-position="2565">
+              <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -162,7 +221,6 @@
         <option value="$PROJECT_DIR$/views/vip-course/web.hbs" />
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/views/partials/nav.hbs" />
-        <option value="$PROJECT_DIR$/models/db.js" />
         <option value="$PROJECT_DIR$/stylesheets/open-courses.css" />
         <option value="$PROJECT_DIR$/middleware/index.js" />
         <option value="$PROJECT_DIR$/views/partials/pager.hbs" />
@@ -183,10 +241,11 @@
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/open-courses.css" />
         <option value="$PROJECT_DIR$/views/open-courses.hbs" />
-        <option value="$PROJECT_DIR$/routes/api/users.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/models/index.js" />
         <option value="$PROJECT_DIR$/routes/api/code.js" />
+        <option value="$PROJECT_DIR$/models/db.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/api/users.js" />
       </list>
     </option>
   </component>
@@ -207,8 +266,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="120" />
-    <option name="y" value="13" />
+    <option name="x" value="287" />
+    <option name="y" value="25" />
     <option name="width" value="1148" />
     <option name="height" value="736" />
   </component>
@@ -220,7 +279,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,6 +311,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +478,8 @@
       <workItem from="1544002683735" duration="16572000" />
       <workItem from="1544176797728" duration="1989000" />
       <workItem from="1544408266650" duration="11899000" />
-      <workItem from="1544519891649" duration="4415000" />
+      <workItem from="1544519891649" duration="6057000" />
+      <workItem from="1544602406400" duration="3980000" />
     </task>
     <task id="LOCAL-00001" summary="sql commit">
       <created>1543978315671</created>
@@ -498,11 +558,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544523033653</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="login commit">
+      <created>1544583711311</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544583711311</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102673000" />
+    <option name="totallyTimeSpent" value="108295000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,10 +581,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="13" width="1148" height="736" extended-state="0" />
-    <editor active="true" />
+    <frame x="287" y="25" width="1148" height="736" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.20588236" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.20955883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5027322" side_tool="true" weight="0.2841254" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -534,7 +600,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50050557" side_tool="true" weight="0.53370786" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49949443" visible="true" weight="0.37375414" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49949443" visible="true" weight="0.23754153" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.59480125" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49949443" weight="0.53370786" />
@@ -780,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express-session/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -795,20 +854,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express-session/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/open-courses.hbs">
       <provider selected="true" editor-type-id="text-editor">
@@ -838,24 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/open-courses.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="95" column="14" lean-forward="true" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/OpenCourse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -866,6 +898,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding>
+            <element signature="e#414#820#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api/code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/open-courses.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/open-courses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -873,10 +936,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/code.js">
+    <entry file="file://$PROJECT_DIR$/routes/api/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+        <state relative-caret-position="27">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
