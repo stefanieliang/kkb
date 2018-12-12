@@ -14,17 +14,17 @@ const sequelize = new Sequelize('kkb','root','root',{
 //定义模型
 const User = sequelize.define('user',{
    //字段定义
-   firstName:{type:Sequelize.STRING(20),notNull:true},
-   lastName:Sequelize.STRING(20),
-   age:{type:Sequelize.INTEGER,unsigned:true}
+   username:{type:Sequelize.STRING(45),notNull:true},
+   phone:Sequelize.STRING(11),
+   password:{type:Sequelize.STRING(32),unsigned:true}
 });
 //同步数据库,force为true则会删除已存在的同名表
 User.sync({force:false}).then(()=>{
     //插入测试数据
-    return User.create({
-        firstName: 'tom',
-        lastName: 'cruise'
-    })
+    // return User.create({
+    //     firstName: 'tom',
+    //     lastName: 'cruise'
+    // })
 }).then(()=>{
     //查询前面插入的数据
     User.findAll().then(users =>{

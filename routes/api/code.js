@@ -68,7 +68,7 @@ router.post('/',async (req,res)=>{
        if(results.length > 0){
            //存在匹配项，验证是否过期
            const expires = results[0].expires;
-           if(expires - new Data() > 0){
+           if(expires - new Date() > 0){
                //有效
                res.json({success:true});
            }else{
