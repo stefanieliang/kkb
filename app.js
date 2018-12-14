@@ -26,26 +26,26 @@ app.set('view engine', 'hbs');
 
 //应用中间件
 app.use(cors({
-    origin:'http://localhost:8080',
-    credentials:true
+    origin: 'http://localhost:8080',
+    credentials: true
 }));//解决跨域
 app.use(logger('dev'));//日志
 app.use(express.json());//获取ajax传递json
-app.use(express.urlencoded({ extended: false }));//解析url参数
+app.use(express.urlencoded({extended: false}));//解析url参数
 app.use(cookieParser('its a secret'));//cookie解析,'its a secret'是cookie的加密字段
 //配置session,需要在cookie下面
 const session = require('express-session');
 const Store = require('express-mysql-session')(session);
 const {pool} = require('./models/db');
-const store = new Store(null,pool);
+const store = new Store(null, pool);
 app.use(session({
     store,// 设置session存储为mysql,注意当前用户需要有表的创建权限
-    secret:'its a secret',//密钥
-    resave:false,//强制保存会话到存储（默认的是内存）中
-    saveUninitialized:false,//保存未初始化的session到存储中
-    cookie:{
-        maxAge: 7*24*60*60*1000
-    }
+    secret: 'its a secret',//密钥
+    resave: false,//强制保存会话到存储（默认的是内存）中
+    saveUninitialized: false,//保存未初始化的session到存储中
+    // 如果不设置cookie中的maxAge，则session只在当前打开时有效
+    // 若关闭页面，则session失效
+    // cookie:{maxAge: 7*24*60*60*1000}
 }));
 //设置静态目录
 app.use(express.static(path.join(__dirname, 'public')));
@@ -63,19 +63,19 @@ app.use('/api/code', codeRouter);
 app.use('/api/users', require('./routes/api/users'));
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+app.use(function (req, res, next) {
+    next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+app.use(function (err, req, res, next) {
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
 });
 
 module.exports = app;
