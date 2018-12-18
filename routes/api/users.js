@@ -117,4 +117,16 @@ router.get('/is-login', (req, res) => {
     }
 });
 
+router.post('/layout', (req, res) => {
+    // 清除会话
+    // req.session.user = null;
+    // delete req.session.user;
+    req.session.destroy((e)=>{
+        if(e){
+            res.json({success:false,message:'注销失败'})
+        }else{
+            res.json({success:true})
+        }
+    });
+});
 module.exports = router;
