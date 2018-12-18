@@ -121,12 +121,85 @@ router.post('/layout', (req, res) => {
     // 清除会话
     // req.session.user = null;
     // delete req.session.user;
-    req.session.destroy((e)=>{
-        if(e){
-            res.json({success:false,message:'注销失败'})
-        }else{
-            res.json({success:true})
+    req.session.destroy((e) => {
+        if (e) {
+            res.json({success: false, message: '注销失败'})
+        } else {
+            res.json({success: true})
         }
     });
 });
+
+//multer 应用于单个路由
+const multer = require('multer');
+//自定义文件名
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {//存储目录
+        cb(null, 'public/images');
+    },
+    filename: function (req, file, cb) {
+        let extname = '';
+        switch (file.mimetype) {
+            case 'image/jpeg' :
+                extname = '.jpeg';
+                break;
+            case 'image/png' :
+                extname = '.png';
+                break;
+            case 'image/gif' :
+                extname = '.gif';
+                break;
+        }
+        cb(null, Date.now() + extname);
+    }
+});
+//图片上传中间件
+const upload = multer({
+    // dest:'public/images',
+    storage,
+    limits: {fileSize: 2 * 1024 * 1024},//最大2M
+    fileFilter: function (req, file, cb) {
+        //判断文件是否合法
+        if (file.mimetype === 'image/gif' ||
+            file.mimetype === 'image/jpeg' ||
+            file.mimetype === 'image/png') {
+            //接受文件
+            cb(null, true);
+        } else {
+            cb(new Error('请上传图片格式'), false);
+        }
+    }
+});
+router.post('/uploadAvatar', upload.single('file'),
+    async (req, res) => {
+        if (!req.file) {
+            res.sendStatus(500)
+        } else {
+            try {
+                // 更新session
+                req.session.user.avatar = req.file.filename;
+                // 更新 user 表中数据
+                const result = await query(`update user set avatar = ? where id = ?`, [req.file.filename, req.session.user.id]);
+                if (result.affectedRows > 0) {
+                    res.json({success: true, data: req.file.filename})
+                }
+
+            } catch (e) {
+
+            }
+        }
+    });
+
+// 查询用户的所有课程
+router.get('/my-courses', async (req, res) => {
+    try {
+        const sql = `SELECT c.id,c.name,c.phase,vc.poster from user_clazz uc LEFT JOIN clazz c ON uc.clazz_id=c.id
+                    LEFT JOIN vip_course vc ON c.course_id=vc.id
+                    WHERE user_id =?`
+        const data = await query(sql,req.session.user.id);
+        res.json({success:true,data})
+    } catch (e) {
+
+    }
+})
 module.exports = router;
